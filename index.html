@@ -20,7 +20,7 @@
             <div class="flex justify-center items-center gap-8">
                 <div class="flex justify-center items-center gap-4 bg-slate-200 px-3 py-2 rounded-full">
                     <img src="assets/checkbox.png" alt="">
-                    <h1 class="text-3xl font-semibold">23</h1>
+                    <h1 id="all-task-count" class="text-3xl font-semibold">23</h1>
                 </div>
                 <div>
                     <button class="cursor-pointer"><img src="assets/theme-btn.png" alt="" srcset=""></button>
@@ -38,31 +38,34 @@
                         </div>
                         <div>
                             <p>Task Assigned</p>
-                            <h1 class="text-2xl font-bold">06</h1>
+                            <h1 id="task-count" class="text-2xl font-bold">06</h1>
                         </div>
                     </div>
-                    <div class="flex-grow col-span-3 bg-linear-to-r p-4 from-blue-600 to-blue-300 rounded-xl flex justify-center items-center gap-3 px-3 mx-4">
-                        <img src="assets/board.png" alt="">
-                        <h1 class="text-2xl text-white">Discover Something <br> New Today!</h1>
-                    </div>
+                    <a class="flex-grow" href="q&a.html">
+                        <div id="qa-part" class="cursor-pointer bg-linear-to-r p-4 from-blue-600 to-blue-300 rounded-xl flex justify-center items-center gap-3 px-3 mx-4">
+                            <img src="assets/board.png" alt="">
+                            <h1 class="text-2xl text-white">Discover Something <br> New Today!</h1>
+                        </div>
+                    </a>
                     <div class="flex justify-center items-center gap-2 p-4 bg-slate-200 rounded-xl">
                         <div class="bg-white p-3 rounded-full me-2">
                             <img class="w-6" src="assets/calender.png" alt="" srcset="">
                         </div>
                         <div>
-                            <p class="text-xl">Wed ,</p>
-                            <h1 class="text-2xl font-bold">March 02 2025</h1>
+                            <p id="crntDay" class="text-xl">Wed ,</p>
+                            <h1 id="crntDate" class="text-2xl font-bold">March 02 2025</h1>
                         </div>
                     </div>
-                    <div class="border-b border-slate-300 border-dashed col-span-full"></div>
                 </div>
 
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="bg-slate-200 p-4 rounded-lg">
+                <div class="border-b border-slate-300 border-dashed"></div>
+
+                <div class="grid grid-cols-3 gap-4 mt-4">
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
                         <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
@@ -70,82 +73,82 @@
                                 <p class="">Deadline</p>
                                 <h2 class="text-lg">21 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-slate-200 p-4 rounded-lg">
-                        <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
+                        <h1 class="px-2 py-1 bg-white inline rounded-md">CloudSync</h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Add Dark Mode</h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="">Deadline</p>
-                                <h2 class="text-lg">21 March 2025</h2>
+                                <h2 class="text-lg">25 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-slate-200 p-4 rounded-lg">
-                        <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
+                        <h1 class="px-2 py-1 bg-white inline rounded-md">SwiftPay</h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Optimize  Home page </h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="">Deadline</p>
-                                <h2 class="text-lg">21 March 2025</h2>
+                                <h2 class="text-lg">10 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-slate-200 p-4 rounded-lg">
-                        <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
+                        <h1 class="px-2 py-1 bg-white inline rounded-md">Meta</h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Add new emoji 🤲</h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="">Deadline</p>
-                                <h2 class="text-lg">21 March 2025</h2>
+                                <h2 class="text-lg">5 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-slate-200 p-4 rounded-lg">
-                        <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
+                        <h1 class="px-2 py-1 bg-white inline rounded-md">Google LLC</h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Integrate OpenAI API </h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="">Deadline</p>
-                                <h2 class="text-lg">21 March 2025</h2>
+                                <h2 class="text-lg">12 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
-                    <div class="bg-slate-200 p-4 rounded-lg">
-                        <h1 class="px-2 py-1 bg-white inline rounded-md">ShopEase</h1>
-                        <h1 class="text-lg font-semibold my-3">Fix Mobile Button Issue </h1>
+                    <div class="cards bg-slate-200 p-4 rounded-lg">
+                        <h1 class="px-2 py-1 bg-white inline rounded-md">Glassdoar</h1>
+                        <h1 class="task-title text-lg font-semibold my-3">Improve Job searching </h1>
                         <div class="px-2 py-1 bg-white rounded-md mb-3">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, dolor!</p>
+                            <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                         </div>
                         <div class="border-b border-slate-400 border-dashed"></div>
                         <div class="flex justify-between items-center">
                             <div>
                                 <p class="">Deadline</p>
-                                <h2 class="text-lg">21 March 2025</h2>
+                                <h2 class="text-lg">28 March 2025</h2>
                             </div>
-                            <button class="bg-blue-500 text-white px-2 py-1 rounded-md">Complete</button>
+                            <button class="task-btn bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer">Complete</button>
                         </div>
                     </div>
                 </div>
@@ -158,11 +161,17 @@
                         <img src="assets/activity.png" alt="">
                         <h1 class="text-xl">Activity Log</h1>
                     </div>
-                    <button class="bg-blue-500 text-white px-2 py-1 rounded-md mx-auto">Clear History</button>
+                    <button class="bg-blue-600 text-white px-2 py-1 rounded-md mx-auto cursor-pointer">Clear History</button>
                 </div>
                 <div class="border-b border-slate-300 border-dashed col-span-full mt-4"></div>
+
+                <div id="history" class="mt-4 hidden">
+                </div>
             </section>
         </main>
     </div>
+
+    <script src="scripts/utilitys.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

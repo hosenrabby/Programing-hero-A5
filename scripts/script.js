@@ -8,8 +8,8 @@ const cTrik = cDate.getDate();
 const cMonth = months[cDate.getMonth()];
 const year = cDate.getFullYear();
 
-const cDayDate = cDate.toDateString()
-const cTime = cDate.toLocaleTimeString()
+const cDayDate = cDate.toDateString();
+const cTime = cDate.toLocaleTimeString();
 
 const currnetDate = `${cMonth} ${cTrik} ${year}`;
 
@@ -17,7 +17,7 @@ document.getElementById("crntDay").innerText = `${crntWeekDays} ,`;
 document.getElementById("crntDate").innerText = currnetDate;
 
 const taskBtns = document.querySelectorAll(".task-btn");
-// let counter = null;
+let disabledCount = null;
 for (const taskBtn of taskBtns) {
     taskBtn.addEventListener("click" , function(ev){
         const taskCount = getDataById("task-count");
@@ -37,7 +37,21 @@ for (const taskBtn of taskBtns) {
                         </div>`;
         container.classList.remove("hidden")
         container.appendChild(div);
-        
-        alert("Board Updated Successfully");
+        taskBtn.disabled = true;
+        taskBtn.classList.add("disabled:opacity-75")
+
+            if (taskBtn.disabled === true) {
+                disabledCount++;
+            }
+
+            alert("Board Updated Successfully");
+            if (taskBtns.length === disabledCount) {
+                alert("Congrets!!! You Completed your All Tasks.")
+            }
     })
-}
+} 
+
+document.getElementById("hishBtn").addEventListener("click" , function (ev) {
+    const historyContainer = document.getElementById("history")
+    historyContainer.innerHTML = "";
+})

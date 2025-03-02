@@ -45,7 +45,7 @@ for (const taskBtn of taskBtns) {
             // }
             alert("Board Updated Successfully");
             if (taskBtns.length === disabledCount) {
-                alert("Congrets!!! You Completed your All Tasks.")
+                alert("Congrats!!! You Completed your All Tasks.")
             }
     })
 } 

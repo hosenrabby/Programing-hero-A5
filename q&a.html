@@ -59,17 +59,15 @@
                 <div class="border-b border-slate-300 border-dashed"></div>
                 <p class="text-slate-600 p-4">Event delegation is a technique in JavaScript where you delegate the responsibility of handling events to a parent element.<br>
                     How Event Delegation Works <br>
-                    1-Event Bubbling: When an event occurs on a child element, it "bubbles up" through its parent elements in the DOM tree.<br>
+                    1 - <b>Event Bubbling</b>: When an event occurs on a child element, it "bubbles up" through its parent elements in the DOM tree.<br>
 
-                    2-Parent Listener: Instead of attaching event listeners to each child element, you attach a single event listener to a parent element.<br>
+                    2 - <b>Parent Listener</b>: Instead of attaching event listeners to each child element, you attach a single event listener to a parent element.<br>
 
-                    3-Event Target: Inside the event handler, you use the event.target property to identify the specific child element that triggered the event.<br>
+                    3 - <b>Event Target</b>: Inside the event handler, you use the event.target property to identify the specific child element that triggered the event.<br>
 
-                    4 - Performance: Attaching a single event listener to a parent element is more efficient than attaching multiple listeners to individual child elements, especially for large lists or dynamically added elements.<br>
+                    4 - <b>Performance</b>: Attaching a single event listener to a parent element is more efficient than attaching multiple listeners to individual child elements, especially for large lists or dynamically added elements.<br>
 
-                    5 - Dynamic Content: Works seamlessly with dynamically added or removed elements, as the parent listener remains active.<br>
-                    
-                    6 - Simplified Code: Reduces the amount of code and makes it easier to manage.
+                    5 - <b>Simplified Code</b>: Reduces the amount of code and makes it easier to manage.
                     
                     
                 </p>
@@ -78,9 +76,9 @@
                 <h1 class="p-4 text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
                 <p class="text-slate-600 p-4">Event Bubbling where an event triggered on a child element propagates ("bubbles up") through its ancestor elements in the DOM tree. This means that if an event occurs on a deeply nested element, it will also trigger event listeners on all of its parent elements <br>
-                1 - Event Target: The event starts at the target element (the element where the event occurred).<br>
+                1 - <b>Event Target</b>: The event starts at the target element (the element where the event occurred).<br>
 
-                2 - Bubbling Phase: The event then propagates upward through the DOM tree, triggering event listeners on each ancestor element.
+                2 - <b>Bubbling Phase</b>: The event then propagates upward through the DOM tree, triggering event listeners on each ancestor element.
                 </p>
             </div>
             <div class="bg-white rounded-lg mb-3">

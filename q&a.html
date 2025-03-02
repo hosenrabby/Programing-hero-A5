@@ -28,27 +28,71 @@
             <div class="bg-white rounded-lg mb-3">
                 <h1 class="p-4 text-lg font-semibold">Question-1: What are the different ways to select an element in the DOM?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
-                <p class="text-slate-600 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quo nulla similique minus molestiae!</p>
+                <p class="text-slate-600 p-4">There are several ways to select elements in the Document Object Model (DOM)
+                <br>
+                1- Select By ID<br>
+                2- Select By Class Name<br>
+                3- Select By Tag Name<br>
+                4- Select By CSS Selector<br>
+                5- Select By name<br>
+                6- Select By Parent and child Nodes etc.<br>
+
+                </p>
             </div>
             <div class="bg-white rounded-lg mb-3">
                 <h1 class="p-4 text-lg font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
-                <p class="text-slate-600 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quo nulla similique minus molestiae!</p>
+                <p class="text-slate-600 p-4">The difference bitween innder HTML , innerText and textContent <br>
+                1 - <b>innerHtml</b><br>
+                --- Its get html element. <br>
+                --- It can be use for create new element or inner element. <br>
+                1 - <b>innerText</b><br>
+                --- Its get text content in the html element. <br>
+                --- It ignore hidden text in html element. <br>
+                1 - <b>textContent</b><br>
+                --- Its get text content in the html element. <br>
+                --- It also get hidden text in html element. <br>
+                </p>
             </div>
             <div class="bg-white rounded-lg mb-3">
                 <h1 class="p-4 text-lg font-semibold">Question-3: What is event delegation in the DOM?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
-                <p class="text-slate-600 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quo nulla similique minus molestiae!</p>
+                <p class="text-slate-600 p-4">Event delegation is a technique in JavaScript where you delegate the responsibility of handling events to a parent element.<br>
+                    How Event Delegation Works <br>
+                    1-Event Bubbling: When an event occurs on a child element, it "bubbles up" through its parent elements in the DOM tree.<br>
+
+                    2-Parent Listener: Instead of attaching event listeners to each child element, you attach a single event listener to a parent element.<br>
+
+                    3-Event Target: Inside the event handler, you use the event.target property to identify the specific child element that triggered the event.<br>
+
+                    4 - Performance: Attaching a single event listener to a parent element is more efficient than attaching multiple listeners to individual child elements, especially for large lists or dynamically added elements.<br>
+
+                    5 - Dynamic Content: Works seamlessly with dynamically added or removed elements, as the parent listener remains active.<br>
+                    
+                    6 - Simplified Code: Reduces the amount of code and makes it easier to manage.
+                    
+                    
+                </p>
             </div>
             <div class="bg-white rounded-lg mb-3">
                 <h1 class="p-4 text-lg font-semibold">Question-4: What is event bubbling in the DOM?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
-                <p class="text-slate-600 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quo nulla similique minus molestiae!</p>
+                <p class="text-slate-600 p-4">Event Bubbling where an event triggered on a child element propagates ("bubbles up") through its ancestor elements in the DOM tree. This means that if an event occurs on a deeply nested element, it will also trigger event listeners on all of its parent elements <br>
+                1 - Event Target: The event starts at the target element (the element where the event occurred).<br>
+
+                2 - Bubbling Phase: The event then propagates upward through the DOM tree, triggering event listeners on each ancestor element.
+                </p>
             </div>
             <div class="bg-white rounded-lg mb-3">
                 <h1 class="p-4 text-lg font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
                 <div class="border-b border-slate-300 border-dashed"></div>
-                <p class="text-slate-600 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem non quo nulla similique minus molestiae!</p>
+                <p class="text-slate-600 p-4">1 - Create an Element
+                    Use the document.createElement() method to create a new element.<br>
+                2 - Add Content or Attributes to the Element
+                    You can add content, attributes, or styles to the newly created element. <br>
+                3 -  Add the Element to the DOM
+                    Use methods like appendChild(), append() and prepend() to add the element to the DOM.
+                </p>
             </div>
         </section>
     </div>

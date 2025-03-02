@@ -36,7 +36,7 @@ for (const taskBtn of taskBtns) {
                             <h1>You have Complete The Task ${taskTitle} at ${cTime}</h1>
                         </div>`;
         container.classList.remove("hidden")
-        container.appendChild(div);
+        container.prepend(div);
         taskBtn.disabled = true;
         taskBtn.classList.add("disabled:opacity-75")
 

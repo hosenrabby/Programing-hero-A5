@@ -17,7 +17,7 @@ document.getElementById("crntDay").innerText = `${crntWeekDays} ,`;
 document.getElementById("crntDate").innerText = currnetDate;
 
 const taskBtns = document.querySelectorAll(".task-btn");
-let disabledCount = null;
+let disabledCount = 0;
 for (const taskBtn of taskBtns) {
     taskBtn.addEventListener("click" , function(ev){
         const taskCount = getDataById("task-count");
@@ -40,10 +40,9 @@ for (const taskBtn of taskBtns) {
         taskBtn.disabled = true;
         taskBtn.classList.add("disabled:opacity-75")
 
-            if (taskBtn.disabled === true) {
+            // if (taskBtn.disabled === true) {
                 disabledCount++;
-            }
-
+            // }
             alert("Board Updated Successfully");
             if (taskBtns.length === disabledCount) {
                 alert("Congrets!!! You Completed your All Tasks.")
@@ -54,4 +53,9 @@ for (const taskBtn of taskBtns) {
 document.getElementById("hishBtn").addEventListener("click" , function (ev) {
     const historyContainer = document.getElementById("history")
     historyContainer.innerHTML = "";
+})
+
+document.getElementById("hexCode").addEventListener("click" , function(ev) {
+    const hexCode = hexColorCode() 
+    document.getElementById("mainTheme").style.backgroundColor = hexCode;
 })

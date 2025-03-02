@@ -40,13 +40,11 @@ for (const taskBtn of taskBtns) {
         taskBtn.disabled = true;
         taskBtn.classList.add("disabled:opacity-75")
 
-            // if (taskBtn.disabled === true) {
-                disabledCount++;
-            // }
-            alert("Board Updated Successfully");
-            if (taskBtns.length === disabledCount) {
-                alert("Congrats!!! You Completed your All Tasks.")
-            }
+        disabledCount++;
+        alert("Board Updated Successfully");
+        if (taskBtns.length === disabledCount) {
+            alert("congratulations !!! You Completed your All Tasks.")
+        }
     })
 } 
 
